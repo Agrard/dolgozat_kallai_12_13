@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Szem szín</td>
+      <td>Súly</td>
+    </tr>
+    <% for(let p of macskak) { %> 
+      <tr>
+        <td style="border: solid black 2px;><a href="/macskak/<%= p.id %>"><%= p.szem_szin%></a></td>
+        <td style="border: solid black 2px;><a href="/macskak/<%= p.id %>"><%= p.suly%></a></td>
+      </tr>
+    <% } %> 
+  </table>
+
+  <br>
+  <a href="./macskak/new">Űrlap</a>
+  <br>
+</body>
+</html>
